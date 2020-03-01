@@ -2,17 +2,9 @@
 
 monorepo sandbox
 
-[![Actions Status](https://github.com/azu/monorepo-sandbox/workflows/publish/badge.svg)](https://github.com/azu/monorepo-sandbox/actions?query=workflow%3A"publish")
+[![Actions Status](https://github.com/azu/monorepo-sandbox-shipjs/workflows/Ship%20js%20Manual%20Prepare/badge.svg)](https://github.com/azu/monorepo-sandbox-shipjs/actions?query=workflow%3A"Ship+js+Manual+Prepare")
+[![Actions Status](https://github.com/azu/monorepo-sandbox-shipjs/workflows/Ship%20js%20trigger/badge.svg)](https://github.com/azu/monorepo-sandbox-shipjs/actions?query=workflow%3A"Ship+js+trigger")
 
-## Install
-
-Install with [npm](https://www.npmjs.com/):
-
-    npm install monorepo-sandbox
-
-## Usage
-
-- [ ] Write usage instructions
 
 ## Changelog
 
