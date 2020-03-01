@@ -1,3 +1,12 @@
+# [1.0.0](https://github.com/azu/monorepo-sandbox/compare/v1.5.3...v1.0.0) (2020-03-01)
+
+
+### Features
+
+* **x:** minor update ([679beef](https://github.com/azu/monorepo-sandbox/commit/679beef278b84766fbce00de48a577982151cbdc))
+
+
+
 # Change Log
 
 All notable changes to this project will be documented in this file.
