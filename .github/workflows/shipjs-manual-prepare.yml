@@ -25,17 +25,24 @@ jobs:
           git config --global user.email "azuciao@gmail.com"
           git config --global user.name "azu"
       - run: |
-          export output=$(npm run release:prepare -- --yes --no-browse)
-          echo "::set-env name=PREPARE_OUTPUT::${output}"
+          npm run release:prepare -- --yes --no-browse > PREPARE_OUTPUT.txt
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SLACK_INCOMING_HOOK: ${{ secrets.SLACK_INCOMING_HOOK }}
+
+  create_done_comment:
+    if: success()
+    needs: manual_prepare
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+        PREPARE_OUTPUT=`cat PREPARE_OUTPUT.txt`
+        echo "::set-env name=PREPARE_OUTPUT::${PREPARE_OUTPUT}"
       - uses: actions/github@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PREPARE_OUTPUT: ${PREPARE_OUTPUT}
         with:
-          args: comment "@${{ github.actor }} `shipjs prepare` done<br>```${PREPARE_OUTPUT}```"
+          args: comment "@${{ github.actor }} `shipjs prepare` done\n```${PREPARE_OUTPUT}```"
 
   create_fail_comment:
     if: cancelled() || failure()
