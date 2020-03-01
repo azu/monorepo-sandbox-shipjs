@@ -25,19 +25,11 @@ jobs:
           git config --global user.email "azuciao@gmail.com"
           git config --global user.name "azu"
       - run: |
-          OUTPUT=$(node_modules/.bin/shipjs prepare --yes --no-browse)
-          echo $OUTPUT
-          echo $OUTPUT > /github/home/PREPARE_OUTPUT.txt
+          PREPARE_OUTPUT=$(node_modules/.bin/shipjs prepare --yes --no-browse)
+          echo "::set-env name=PREPARE_OUTPUT::${PREPARE_OUTPUT}"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SLACK_INCOMING_HOOK: ${{ secrets.SLACK_INCOMING_HOOK }}
-
-  create_done_comment:
-    if: success()
-    needs: manual_prepare
-    runs-on: ubuntu-latest
-    steps:
-      - run: PREPARE_OUTPUT=`cat /github/home/PREPARE_OUTPUT.txt` && echo "::set-env name=PREPARE_OUTPUT::${PREPARE_OUTPUT}"
       - uses: actions/github@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
