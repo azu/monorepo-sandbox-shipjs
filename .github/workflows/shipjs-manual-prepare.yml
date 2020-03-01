@@ -34,7 +34,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          args: comment "@${{ github.actor }} `shipjs prepare` done\n```${PREPARE_OUTPUT}```"
+          args: comment "@${{ github.actor }} `shipjs prepare` done\n```${{PREPARE_OUTPUT}}```"
 
   create_fail_comment:
     if: cancelled() || failure()
