@@ -35,9 +35,7 @@ jobs:
     needs: manual_prepare
     runs-on: ubuntu-latest
     steps:
-      - run: |
-        PREPARE_OUTPUT=`cat PREPARE_OUTPUT.txt`
-        echo "::set-env name=PREPARE_OUTPUT::${PREPARE_OUTPUT}"
+      - run: PREPARE_OUTPUT=`cat PREPARE_OUTPUT.txt` && echo "::set-env name=PREPARE_OUTPUT::${PREPARE_OUTPUT}"
       - uses: actions/github@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
