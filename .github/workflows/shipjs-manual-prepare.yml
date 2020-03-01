@@ -25,7 +25,7 @@ jobs:
           git config --global user.email "azuciao@gmail.com"
           git config --global user.name "azu"
       - run: |
-          npm run release:prepare -- --yes --no-browse > PREPARE_OUTPUT.txt
+          node_modules/.bin/shipjs prepare --yes --no-browse > PREPARE_OUTPUT.txt
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SLACK_INCOMING_HOOK: ${{ secrets.SLACK_INCOMING_HOOK }}
