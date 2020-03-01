@@ -33,7 +33,7 @@
     "lerna": "^3.20.2",
     "shipjs": "0.16.0"
   },
-  "workspaces": {
-    "packages": ["packages/*"]
-  }
+  "workspaces": [
+    "packages/*"
+  ]
 }
