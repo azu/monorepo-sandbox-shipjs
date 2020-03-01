@@ -27,7 +27,7 @@ jobs:
       - run: |
           OUTPUT=$(node_modules/.bin/shipjs prepare --yes --no-browse)
           echo $OUTPUT
-          echo $OUTPUT > PREPARE_OUTPUT.txt
+          echo $OUTPUT > /github/home/PREPARE_OUTPUT.txt
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SLACK_INCOMING_HOOK: ${{ secrets.SLACK_INCOMING_HOOK }}
@@ -37,7 +37,7 @@ jobs:
     needs: manual_prepare
     runs-on: ubuntu-latest
     steps:
-      - run: PREPARE_OUTPUT=`cat PREPARE_OUTPUT.txt` && echo "::set-env name=PREPARE_OUTPUT::${PREPARE_OUTPUT}"
+      - run: PREPARE_OUTPUT=`cat /github/home/PREPARE_OUTPUT.txt` && echo "::set-env name=PREPARE_OUTPUT::${PREPARE_OUTPUT}"
       - uses: actions/github@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
