@@ -1,10 +1,14 @@
-# monorepo-sandbox
+# monorepo sandbox shipjs edition
 
-monorepo sandbox
+monorepo sandbox shipjs edition
 
 [![Actions Status](https://github.com/azu/monorepo-sandbox-shipjs/workflows/Ship%20js%20Manual%20Prepare/badge.svg)](https://github.com/azu/monorepo-sandbox-shipjs/actions?query=workflow%3A"Ship+js+Manual+Prepare")
 [![Actions Status](https://github.com/azu/monorepo-sandbox-shipjs/workflows/Ship%20js%20trigger/badge.svg)](https://github.com/azu/monorepo-sandbox-shipjs/actions?query=workflow%3A"Ship+js+trigger")
 
+## Architecture
+
+- monorepo with lerna + yarn
+- publish by shipjs
 
 ## Changelog
 

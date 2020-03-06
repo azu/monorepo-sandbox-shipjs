@@ -1,8 +1,8 @@
 {
   "private": true,
-  "name": "monorepo-sandbox",
+  "name": "monorepo-sandbox-shipjs",
   "version": "1.0.0",
-  "description": "monorepo sandbox",
+  "description": "monorepo sandbox shipjs edition",
   "keywords": [
     "monorepo"
   ],
