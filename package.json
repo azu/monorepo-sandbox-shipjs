@@ -29,7 +29,8 @@
     "versionup:major": "npm run push:current && lerna version minor --conventional-commits",
     "release": "lerna publish from-package",
     "release:prepare": "shipjs prepare",
-    "release:trigger": "shipjs trigger"
+    "release:trigger": "shipjs trigger",
+    "test": "#"
   },
   "devDependencies": {
     "lerna": "^3.20.2",
