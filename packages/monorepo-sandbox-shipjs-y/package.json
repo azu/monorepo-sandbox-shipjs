@@ -20,7 +20,7 @@
   },
   "scripts": {},
   "dependencies": {
-    "monorepo-sandbox-shipjs-x": "^1.5.3"
+    "@azu/monorepo-sandbox-shipjs-x": "^1.5.3"
   },
   "publishConfig": {
     "access": "public",
