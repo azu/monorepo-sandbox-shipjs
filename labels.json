@@ -1,0 +1,87 @@
+[
+  {
+    "name": "Type: Feature",
+    "color": "ffff00",
+    "description": "Includes new features",
+    "aliases": [
+      "features",
+      "enhancement"
+    ]
+  },
+  {
+    "name": "Type: Bug",
+    "color": "ee0701",
+    "description": "Bug or Bug fixes",
+    "aliases": [
+      "bug"
+    ]
+  },
+  {
+    "name": "Type: Security",
+    "color": "b60205",
+    "description": "Security fixes",
+    "aliases": [
+      "vulnerability",
+      "vulnerabilities"
+    ]
+  },
+  {
+    "name": "Type: Performance",
+    "color": "cc317c",
+    "description": "Includes performance fixes",
+    "aliases": [
+      "perf",
+      "perform"
+    ]
+  },
+  {
+    "name": "Type: Improvement",
+    "color": "1d76db",
+    "description": "Includes backwards-compatible fixes",
+    "aliases": []
+  },
+  {
+    "name": "Type: Breaking",
+    "color": "b60205",
+    "description": "Includes backwards-incompatible fixes",
+    "aliases": [
+      "breaking",
+      "breaking-change"
+    ]
+  },
+  {
+    "name": "Type: Deprecated",
+    "color": "f7ffa8",
+    "description": "Includes deprecate fixes",
+    "aliases": [
+      "deprecated"
+    ]
+  },
+  {
+    "name": "Type: I18n",
+    "color": "ffd412",
+    "description": "An internationalization fixes",
+    "aliases": [
+      "internationalization",
+      "i18n"
+    ]
+  },
+  {
+    "name": "Type: A11y",
+    "color": "0000ff",
+    "description": "An accessibility fixes",
+    "aliases": [
+      "accessibility",
+      "a11y"
+    ]
+  },
+  {
+    "name": "Type: Documentation",
+    "color": "5319e7",
+    "description": "A documetation fixes",
+    "aliases": [
+      "documents",
+      "document"
+    ]
+  }
+]
