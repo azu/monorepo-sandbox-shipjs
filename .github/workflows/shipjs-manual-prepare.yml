@@ -30,7 +30,7 @@ jobs:
           git config --global user.email "azuciao@gmail.com"
           git config --global user.name "azu"
       - run: |
-          node_modules/.bin/shipjs prepare --yes --no-browse > PREPARE_OUTPUT.txt
+          node_modules/.bin/shipjs prepare --yes --no-browse | tee PREPARE_OUTPUT.txt
           PREPARE_OUTPUT=$(cat PREPARE_OUTPUT.txt)
           echo "::set-env name=PREPARE_OUTPUT::${PREPARE_OUTPUT}"
         env:
