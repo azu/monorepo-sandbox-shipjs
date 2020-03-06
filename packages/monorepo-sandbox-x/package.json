@@ -1,19 +1,19 @@
 {
-  "name": "@azu/monorepo-sandbox-x",
+  "name": "@azu/monorepo-sandbox-shipjs-x",
   "version": "1.5.3",
   "description": "[example] x package",
   "repository": {
     "type": "git",
-    "url": "ssh://git@github.com/azu/monorepo-sandbox.git",
-    "directory": "packages/monorepo-sandbox-x"
+    "url": "ssh://git@github.com/azu/monorepo-sandbox-shipjs.git",
+    "directory": "packages/monorepo-sandbox-shipjs-x"
   },
-  "homepage": "https://github.com/azu/monorepo-sandbox/tree/master/packages/monorepo-sandbox-x#readme",
+  "homepage": "https://github.com/azu/monorepo-sandbox/tree/master/packages/monorepo-sandbox-shipjs-x#readme",
   "license": "MIT",
   "author": "azu <azuciao@gmail.com>",
   "files": [
     "lib"
   ],
-  "main": "lib/monorepo-sandbox-x.js",
+  "main": "lib/monorepo-sandbox-shipjs-x.js",
   "directories": {
     "lib": "lib",
     "test": "__tests__"

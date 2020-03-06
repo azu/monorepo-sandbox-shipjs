@@ -1,11 +1,11 @@
-# `monorepo-sandbox-x`
+# `monorepo-sandbox-shipjs-x`
 
 x is package.-?
 
 ## Usage
 
 ```
-const monorepoSandboxX = require('monorepo-sandbox-x');
+const monorepoSandboxX = require('monorepo-sandbox-shipjs-x');
 
 // TODO: DEMONSTRATE API
 ```

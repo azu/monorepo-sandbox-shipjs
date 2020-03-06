@@ -1,11 +1,11 @@
-# `@azu/monorepo-sandbox-y`
+# `@azu/monorepo-sandbox-shipjs-y`
 
 > TODO: description
 
 ## Usage
 
 ```
-const monorepoSandboxY = require('@azu/monorepo-sandbox-y');
+const monorepoSandboxY = require('@azu/monorepo-sandbox-shipjs-y');
 
 // TODO: DEMONSTRATE API
 ```

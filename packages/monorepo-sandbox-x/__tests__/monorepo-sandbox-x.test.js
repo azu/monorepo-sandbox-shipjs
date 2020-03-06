@@ -2,6 +2,6 @@
 
 const monorepoSandboxX = require('..');
 
-describe('monorepo-sandbox-x', () => {
+describe('monorepo-sandbox-shipjs-x', () => {
     it('needs tests');
 });
