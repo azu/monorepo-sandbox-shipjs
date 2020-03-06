@@ -30,7 +30,8 @@
     "release": "lerna publish from-package",
     "release:prepare": "shipjs prepare",
     "release:trigger": "shipjs trigger",
-    "test": "#"
+    "test": "#",
+    "build": "#"
   },
   "devDependencies": {
     "lerna": "^3.20.2",
