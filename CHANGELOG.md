@@ -1,3 +1,13 @@
+
+## v1.7.0 (2020-03-06)
+
+#### :star: Features
+* `monorepo-sandbox-shipjs-x`
+  * [#14](https://github.com/azu/monorepo-sandbox-shipjs/pull/14) feat(x): up minor ([@azu](https://github.com/azu))
+
+#### Committers: 1
+- azu ([@azu](https://github.com/azu))
+
 # Change Log
 
 All notable changes to this project will be documented in this file.
