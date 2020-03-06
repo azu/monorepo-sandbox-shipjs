@@ -12,6 +12,8 @@ jobs:
         with:
           ref: master
       - uses: actions/setup-node@v1
+        with:
+          registry-url: 'https://npm.pkg.github.com'
       - run: |
           if [ -f "yarn.lock" ]; then
             yarn install
