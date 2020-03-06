@@ -35,7 +35,7 @@ jobs:
           echo "::set-env name=PREPARE_OUTPUT::${PREPARE_OUTPUT}"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          SLACK_INCOMING_HOOK: ${{ secrets.SLACK_INCOMING_HOOK }}
+          GITHUB_AUTH: ${{ secrets.GITHUB_TOKEN }}
       - uses: actions/github@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
