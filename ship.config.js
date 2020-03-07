@@ -57,7 +57,7 @@ module.exports = {
                              }) => `${releaseType} release v${version}`,
     publishCommand: ({ isYarn, tag, defaultCommand, dir }) => {
         // Always use npm
-        return `npm publish --tag ${tag}`
+        return `npx can-npm-publish && npm publish --tag ${tag}`
     },
     shouldRelease: () => true,
     releases: {
