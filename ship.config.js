@@ -45,16 +45,6 @@ module.exports = {
             commitChangelog(pkg.version, nextVersion).then(resolve)
         })
     },
-    formatCommitMessage: ({
-                              version,
-                              releaseType,
-                              mergeStrategy,
-                              baseBranch
-                          }) => `${releaseType} release v${version}`,
-    formatPullRequestTitle: ({
-                                 version,
-                                 releaseType
-                             }) => `${releaseType} release v${version}`,
     publishCommand: ({ isYarn, tag, defaultCommand, dir }) => {
         // Always use npm
         return `npx can-npm-publish && npm publish --tag ${tag} || echo "Does not publish"`
