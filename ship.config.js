@@ -55,6 +55,10 @@ module.exports = {
                                  version,
                                  releaseType
                              }) => `${releaseType} release v${version}`,
+    publishCommand: ({ isYarn, tag, defaultCommand, dir }) => {
+        // Always use npm
+        return `npm publish --tag ${tag}`
+    },
     shouldRelease: () => true,
     releases: {
         extractChangelog: ({ version, dir }) => {
