@@ -21,7 +21,7 @@ jobs:
             npm install
           fi
       - run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" >> ~/.npmrc
-      - run: echo '@azu:registry="https://npm.pkg.github.com"' >> ~/.npmrc
+      - run: echo 'registry="https://npm.pkg.github.com"' >> ~/.npmrc
       - run: cat ~/.npmrc
       - run: npm run release:trigger
         env:
