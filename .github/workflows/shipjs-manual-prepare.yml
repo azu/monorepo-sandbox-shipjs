@@ -20,6 +20,8 @@ jobs:
           fetch-depth: 0
           ref: master
       - uses: actions/setup-node@v1
+        with:
+          registry-url: 'https://npm.pkg.github.com'
       - run: |
           if [ -f "yarn.lock" ]; then
             yarn install
@@ -30,6 +32,7 @@ jobs:
           git config --global user.email "azuciao@gmail.com"
           git config --global user.name "azu"
       - run: |
+          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" >> ~/.npmrc
           node_modules/.bin/shipjs prepare --yes --no-browse
           export NEXT_VERSION_TAG=$(node -p 'require("./lerna.json").version')
           echo "::set-env name=NEXT_VERSION_TAG::${NEXT_VERSION_TAG}"
