@@ -40,7 +40,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          args: comment "@${{ github.actor }} `shipjs prepare` done<br />PR https://${GITHUB_REPOSITORY}/pull/releases/${NEXT_VERSION_TAG}"
+          args: comment "@${{ github.actor }} `shipjs prepare` done<br />PR https://${{GITHUB_REPOSITORY}}/pull/releases/${{NEXT_VERSION_TAG}}"
 
   create_fail_comment:
     if: cancelled() || failure()
@@ -51,4 +51,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          args: comment "@${{ github.actor }} `shipjs prepare` fail<br />Action https://github.com/${GITHUB_REPOSITORY}/runs/${GITHUB_RUN_ID}"
+          args: comment "@${{ github.actor }} `shipjs prepare` fail<br />Action https://github.com/${{GITHUB_REPOSITORY}}/runs/${{GITHUB_RUN_ID}}"
