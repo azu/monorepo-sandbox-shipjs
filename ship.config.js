@@ -59,7 +59,6 @@ module.exports = {
         // Always use npm
         return `npx can-npm-publish && npm publish --tag ${tag} || echo "Does not publish"`
     },
-    shouldRelease: () => true,
     releases: {
         extractChangelog: ({ version, dir }) => {
             const changelogPath = path.resolve(dir, 'CHANGELOG.md');
