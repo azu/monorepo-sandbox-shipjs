@@ -57,9 +57,8 @@ module.exports = {
                              }) => `${releaseType} release v${version}`,
     publishCommand: ({ isYarn, tag, defaultCommand, dir }) => {
         // Always use npm
-        return `npx can-npm-publish && npm publish --tag ${tag} || echo "Does not publish"`
+        return `npm publish --tag ${tag}"`
     },
-    shouldRelease: () => true,
     releases: {
         extractChangelog: ({ version, dir }) => {
             const changelogPath = path.resolve(dir, 'CHANGELOG.md');
