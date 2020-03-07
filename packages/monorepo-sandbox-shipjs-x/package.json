@@ -1,6 +1,6 @@
 {
   "name": "@azu/monorepo-sandbox-shipjs-x",
-  "version": "1.7.0",
+  "version": "1.8.0",
   "description": "[example] x package",
   "repository": {
     "type": "git",
