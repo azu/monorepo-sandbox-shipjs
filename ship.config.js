@@ -38,12 +38,6 @@ module.exports = {
         packagesToBump: ["packages/*"],
         packagesToPublish: ["packages/*"]
     },
-    getNextVersion: (revisionRange,
-                     currentVersion,
-                     dir) => {
-        console.log("getNextVersion");
-        console.log(revisionRange, currentVersion, dir)
-    },
     updateChangelog: false,
     beforeCommitChanges: ({ nextVersion, exec, dir }) => {
         return new Promise(resolve => {
@@ -53,7 +47,7 @@ module.exports = {
     },
     publishCommand: ({ isYarn, tag, defaultCommand, dir }) => {
         // Always use npm
-        return `npx can-npm-publish && npm publish --tag ${tag} || echo "Does not publish"`
+        return `npm publish --tag ${tag} || echo "Does not publish"`
     },
     releases: {
         extractChangelog: ({ version, dir }) => {
