@@ -38,6 +38,12 @@ module.exports = {
         packagesToBump: ["packages/*"],
         packagesToPublish: ["packages/*"]
     },
+    getNextVersion: (revisionRange,
+                     currentVersion,
+                     dir) => {
+        console.log("getNextVersion");
+        console.log(revisionRange, currentVersion, dir)
+    },
     updateChangelog: false,
     beforeCommitChanges: ({ nextVersion, exec, dir }) => {
         return new Promise(resolve => {
